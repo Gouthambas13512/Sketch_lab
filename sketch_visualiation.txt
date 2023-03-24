@@ -1,0 +1,35 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+
+\begin{document}
+
+\title{Sketch}
+\author{Goutham B}
+\date{March 2023}
+
+\begin{table}[ht]
+\centering
+\begin{tabular}{|c|c|c|c|}
+\hline
+\textbf{Comparison} & \textbf{Raw Similarities} & \textbf{MinHash Similarities} & \textbf{Bloom Filter Similarities} \\ \hline
+1st \& 2nd & 0.2668 & 0.25 / 0.2516 / 0.2285 & 0.2957 \\ \hline
+1st \& 3rd & 0.2083 & 0.2195 / 0.2034 / 0.1891 & 0.2410 \\ \hline
+1st \& MI & 0.1646 & 0.1905 / 0.1655 / 0.1501 & 0.1975 \\ \hline
+1st \& NOB & 0.1661 & 0.1834 / 0.1574 / 0.1357 & 0.2021 \\ \hline
+2nd \& 3rd & 0.2100 & 0.1976 / 0.1905 / 0.1933 & 0.2476 \\ \hline
+2nd \& MI & 0.1683 & 0.1765 / 0.1587 / 0.1461 & 0.2058 \\ \hline
+2nd \& NOB & 0.1639 & 0.1429 / 0.1534 / 0.1468 & 0.2070 \\ \hline
+3rd \& MI & 0.2354 & 0.2048 / 0.2407 / 0.2270 & 0.2670 \\ \hline
+3rd \& NOB & 0.2218 & 0.2165 / 0.2055 / 0.2563 & 0.2563 \\ \hline
+MI \& NOB & 0.2885 & 0.2626 / 0.2666 / 0.3187 & 0.3187 \\ \hline
+\end{tabular}
+\caption{Comparison of raw, MinHash (K = 100,500,1000), and Bloom filter similarities}
+\caption{1st = Series One, 
+2nd = Series Two,
+3rd = Series Three,
+MI = Mountain Interval,
+NOB = North of Boston}
+\label{tab:similarity-comparison}
+\end{table}
+
+\end{document}
